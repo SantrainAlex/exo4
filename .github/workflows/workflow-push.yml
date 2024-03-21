@@ -25,6 +25,7 @@ jobs:
       - name: Dowload le projet
         uses: actions/download-artifact@v4
         with:
+          name: mon-site
           path: dist/
       - name: affiche
         run: |
