@@ -4,12 +4,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: test
-        run: npm test
       - name: récupérer le code
         uses: actions/checkout@v4
       - name: install
         run: npm install
+      - name: test
+        run: npm test
       - name: build
         run: npm build
       - name: Upload le résultat du build
